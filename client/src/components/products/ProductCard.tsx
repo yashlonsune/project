@@ -46,7 +46,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       
       <div className="p-4">
         <h3 className="font-medium text-lg">{product.name}</h3>
-        <p className="text-primary font-semibold mt-1">${product.price.toFixed(2)}</p>
+        <p className="text-primary font-semibold mt-1">₹{product.price.toLocaleString('en-IN')}</p>
       </div>
     </Link>
   );

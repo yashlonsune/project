@@ -107,7 +107,7 @@ const ProductDetailPage = () => {
             </div>
             
             {/* Price */}
-            <p className="text-2xl font-semibold text-primary mb-6">${product.price.toFixed(2)}</p>
+            <p className="text-2xl font-semibold text-primary mb-6">₹{product.price.toLocaleString('en-IN')}</p>
             
             {/* Description */}
             <p className="text-gray-700 mb-8">{product.description}</p>
@@ -191,7 +191,7 @@ const ProductDetailPage = () => {
                 <Truck size={20} className="mr-3 text-primary mt-1" />
                 <div>
                   <h3 className="font-medium">Free Shipping</h3>
-                  <p className="text-sm text-gray-600">Free shipping on all orders over $200</p>
+                  <p className="text-sm text-gray-600">Free shipping on all orders over ₹15,000</p>
                 </div>
               </div>
               

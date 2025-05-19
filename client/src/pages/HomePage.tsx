@@ -169,7 +169,7 @@ const testimonials = [
   {
     name: 'James Wilson',
     avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content: 'These are the most comfortable dress shoes Ive ever owned. The quality is exceptional, and theyve aged beautifully over the past year.'
+    content: "These are the most comfortable dress shoes I've ever owned. The quality is exceptional, and they've aged beautifully over the past year."
   },
   {
     name: 'Michael Chen',
@@ -179,8 +179,8 @@ const testimonials = [
   {
     name: 'Emily Rodriguez',
     avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content: 'I purchased these as a gift for my husband, and he hasnt stopped raving about them. The quality is outstanding, and the customer service was exceptional.'
-  },
+    content: "I purchased these as a gift for my husband, and he hasn't stopped raving about them. The quality is outstanding, and the customer service was exceptional."
+  }
 ];
 
 export default HomePage;

@@ -79,7 +79,7 @@ const CartPage = () => {
                     {/* Price */}
                     <div className="text-center">
                       <span className="sm:hidden inline-block mr-2 font-medium">Price:</span>
-                      ${item.price.toFixed(2)}
+                      ₹{item.price.toLocaleString('en-IN')}
                     </div>
                     
                     {/* Quantity */}
@@ -108,7 +108,7 @@ const CartPage = () => {
                     <div className="flex items-center justify-between sm:justify-end">
                       <span className="font-medium sm:hidden">Total:</span>
                       <div className="flex items-center">
-                        <span className="font-medium">${(item.price * item.quantity).toFixed(2)}</span>
+                        <span className="font-medium">₹{(item.price * item.quantity).toLocaleString('en-IN')}</span>
                         <button
                           onClick={() => removeFromCart(item.id, item.size)}
                           className="ml-4 text-gray-500 hover:text-red-500"
@@ -138,19 +138,19 @@ const CartPage = () => {
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Subtotal</span>
-                  <span className="font-medium">${cartTotal.toFixed(2)}</span>
+                  <span className="font-medium">₹{cartTotal.toLocaleString('en-IN')}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Shipping</span>
                   <span className="font-medium">
-                    {cartTotal >= 200 ? 'Free' : '$10.00'}
+                    {cartTotal >= 15000 ? 'Free' : '₹750'}
                   </span>
                 </div>
                 <div className="border-t pt-4">
                   <div className="flex justify-between font-bold">
                     <span>Total</span>
                     <span>
-                      ${(cartTotal + (cartTotal >= 200 ? 0 : 10)).toFixed(2)}
+                      ₹{(cartTotal + (cartTotal >= 15000 ? 0 : 750)).toLocaleString('en-IN')}
                     </span>
                   </div>
                   <p className="text-gray-500 text-sm mt-1">
@@ -172,9 +172,9 @@ const CartPage = () => {
               <div className="mt-6 text-sm text-gray-500">
                 <p className="mb-2">We accept:</p>
                 <div className="flex gap-2">
-                  <div className="bg-gray-100 rounded px-2 py-1">Visa</div>
-                  <div className="bg-gray-100 rounded px-2 py-1">Mastercard</div>
-                  <div className="bg-gray-100 rounded px-2 py-1">PayPal</div>
+                  <div className="bg-gray-100 rounded px-2 py-1">UPI</div>
+                  <div className="bg-gray-100 rounded px-2 py-1">Net Banking</div>
+                  <div className="bg-gray-100 rounded px-2 py-1">Cards</div>
                 </div>
               </div>
             </div>

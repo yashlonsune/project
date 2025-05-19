@@ -11,20 +11,20 @@ const ProfilePage = () => {
     {
       id: 'ORD-12345',
       date: '2023-09-15',
-      total: 299.00,
+      total: 24900,
       status: 'Delivered',
       items: [
-        { name: 'Classic Oxford', quantity: 1, price: 299.00 }
+        { name: 'Classic Oxford', quantity: 1, price: 24900 }
       ]
     },
     {
       id: 'ORD-12346',
       date: '2023-08-22',
-      total: 528.00,
+      total: 43900,
       status: 'Delivered',
       items: [
-        { name: 'Leather Derby', quantity: 1, price: 279.00 },
-        { name: 'Driving Moccasins', quantity: 1, price: 249.00 }
+        { name: 'Leather Derby', quantity: 1, price: 23200 },
+        { name: 'Driving Moccasins', quantity: 1, price: 20700 }
       ]
     }
   ];
@@ -263,7 +263,7 @@ const ProfilePage = () => {
                             </div>
                           </div>
                           <div className="mt-4 md:mt-0">
-                            <span className="font-medium">${order.total.toFixed(2)}</span>
+                            <span className="font-medium">${(order.total / 100).toFixed(2)}</span>
                           </div>
                         </div>
                         
@@ -280,7 +280,7 @@ const ProfilePage = () => {
                                   </div>
                                 </div>
                                 <div className="font-medium">
-                                  ${item.price.toFixed(2)}
+                                  ${(item.price / 100).toFixed(2)}
                                 </div>
                               </div>
                             </div>

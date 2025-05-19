@@ -8,7 +8,7 @@ const ProductsPage = () => {
   const [filteredProducts, setFilteredProducts] = useState(ALL_PRODUCTS);
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 500]);
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 35000]);
   const [showFilters, setShowFilters] = useState(false);
 
   // Filter products based on category, search term, and price range
@@ -45,7 +45,7 @@ const ProductsPage = () => {
   const resetFilters = () => {
     setSelectedCategory('all');
     setSearchTerm('');
-    setPriceRange([0, 500]);
+    setPriceRange([0, 35000]);
   };
 
   return (
@@ -124,13 +124,13 @@ const ProductsPage = () => {
                   <h4 className="font-medium mb-2">Price Range</h4>
                   <div className="space-y-4">
                     <div className="flex justify-between items-center">
-                      <span>${priceRange[0]}</span>
-                      <span>${priceRange[1]}</span>
+                      <span>₹{priceRange[0].toLocaleString('en-IN')}</span>
+                      <span>₹{priceRange[1].toLocaleString('en-IN')}</span>
                     </div>
                     <input
                       type="range"
                       min="0"
-                      max="500"
+                      max="35000"
                       value={priceRange[1]}
                       onChange={(e) => handlePriceChange(priceRange[0], parseInt(e.target.value))}
                       className="w-full"
@@ -199,13 +199,13 @@ const ProductsPage = () => {
               <h4 className="font-medium mb-2">Price Range</h4>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span>${priceRange[0]}</span>
-                  <span>${priceRange[1]}</span>
+                  <span>₹{priceRange[0].toLocaleString('en-IN')}</span>
+                  <span>₹{priceRange[1].toLocaleString('en-IN')}</span>
                 </div>
                 <input
                   type="range"
                   min="0"
-                  max="500"
+                  max="35000"
                   value={priceRange[1]}
                   onChange={(e) => handlePriceChange(priceRange[0], parseInt(e.target.value))}
                   className="w-full"
