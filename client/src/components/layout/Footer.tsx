@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,14 +16,14 @@ const Footer = () => {
               Each pair tells a story of artisanal excellence and timeless style.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-light-brown hover:text-accent transition-colors">
+              <a href="https://www.instagram.com/yash_patil_011" className="text-light-brown hover:text-accent transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-light-brown hover:text-accent transition-colors">
+              <a href="https://www.instagram.com/yash_patil_011" className="text-light-brown hover:text-accent transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-light-brown hover:text-accent transition-colors">
-                <Twitter size={20} />
+              <a href="https://linkedin.com/in/yash-lonsune-0011x" className="text-light-brown hover:text-accent transition-colors">
+                <Linkedin size={20} />
               </a>
             </div>
           </div>
@@ -107,7 +107,7 @@ const Footer = () => {
         {/* Bottom Info */}
         <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-light-brown text-sm mb-4 md:mb-0">
-            &copy; {currentYear} Artisan Leather. All rights reserved.
+            &copy; {currentYear} Yash Lonsune. All rights reserved.
           </p>
           <div className="flex space-x-4 text-sm">
             <a href="#" className="text-light-brown hover:text-accent transition-colors">
